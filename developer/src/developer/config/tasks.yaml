@@ -1,0 +1,10 @@
+develop_task:
+  description: >
+    Create a REST based application with name customer-loan-service.
+    Use Java 8, spring boot that uses webflux, maven as build tool, h2 in-memory as database.
+    The app should have a REST entry point for creating loan with attributes customerId, period.
+    Make sure all type of validations are done before processing.
+    For processing, create a loan in the database side, and return the same as response.
+  expected_output: >
+    A application that is compiled and ready to run on developer machine
+  agent: developer
