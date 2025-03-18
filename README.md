@@ -2,21 +2,32 @@
 
 Contains the list of multi ai-agents, which are created using the crewai library.
 
-### python 3.12
+### Install 
 ``` shell
 brew install python@3.12
 python3.12 -m venv venv
+```
+
+### Activate
+``` shell
 source venv/bin/activate
 ```
-### crewai
-https://pypi.org/project/crewai/
 
-inside the venv - to create a new agent template:
+### Run
+Inside the venv :-
 
+1. to create a new agent template:
 ``` shell
 pip install crewai
 crewai create crew {project_name}
-cd {project_name}
+cd {project_name_folder}
+crewai install
+crewai run
+```
+2. to run the existing agent:
+``` shell
+pip install crewai
+cd {project_name_folder_researcher_developer_etc}
 crewai install
 crewai run
 ```
