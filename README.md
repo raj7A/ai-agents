@@ -31,6 +31,7 @@ cd {project_name_folder_researcher_developer_etc}
 crewai install
 crewai run
 ```
-### keys
-1. https://platform.openai.com/api-keys - to create/get openapi key
-2. https://aistudio.google.com/apikeys - to create/get google api key
+### llms
+1. https://platform.openai.com/api-keys - if running the remote model, to create/get openapi key
+2. https://aistudio.google.com/apikeys - if running the remote model, to create/get google api key
+3. https://ollama.com/download - if running the model locally
