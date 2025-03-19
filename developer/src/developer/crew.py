@@ -1,6 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-
+from crewai import LLM
 
 @CrewBase
 class Developer():
@@ -8,12 +8,17 @@ class Developer():
 
     agents_config = 'config/agents.yaml'
     tasks_config = 'config/tasks.yaml'
+    llm = LLM(
+        model = "ollama/llama3.2",
+        base_url="http://localhost:11434"
+    )
 
     @agent
     def developer(self) -> Agent:
         return Agent(
             config=self.agents_config['developer'],
-            verbose=True
+            verbose=True,
+            llm = self.llm
         )
 
     @task
